@@ -1,6 +1,6 @@
 # Fontend-UI-Guideline
 
-* [HTML Guidelines](https://github.com/pramodui5/Fontend-UI-Guideline/blob/master/HTML%20Guidelines.md)
+* [HTML Guidelines](https://github.com/pramodui5/Fontend-UI-Guideline/blob/master/html-guideline.md)
 
 * [CSS Guidelines]()
 
