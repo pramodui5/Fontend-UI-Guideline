@@ -271,7 +271,8 @@ Using the Webfont Loader requires the use of JavaScript to work
 Most browsers will load the rest of the page first, leaving a blank space where the text would be, or otherwise show the fallback option if one exists, until the page fully loads.
 Some fonts in the webfont library render poorly on Windows
 
-###CSS Validation
+###CSS Validation:
+
 Make sure your CSS is proper and there is no deprecated properties.
 Use below url to validate you CSS.
 
