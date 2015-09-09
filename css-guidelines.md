@@ -2,13 +2,14 @@
 
 ## Table of Contents
 
-1. [ID and class name delimiters](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#id-and-class-name-delimiters-)
-2. [ID and class name style](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#id-and-class-name-style-)
-3. [Type selectors](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#type-selectors-)
-4. [Case sensitive CSS](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#case-sensitive-css-)
-5. [Ending your CSS declarations with ";"](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#ending-your-css-declarations-with-)
-6. [Shorthand properties](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#shorthand-properties-)
-7. [0 and units](https://github.com/webonise/Front-End/blob/master/CSS-Guidelines.md#0-and-units-)
+1. [ID and class name delimiters](id-and-class-name-delimiters-)
+2. [ID and class name style](id-and-class-name-style-)
+3. [Type selectors](type-selectors-)
+4. [Case sensitive CSS](case-sensitive-css-)
+5. [Ending your CSS declarations with ";"](ending-your-css-declarations-with-)
+6. [Shorthand properties](shorthand-properties-)
+7. [0 and units](CSS-Guidelines.md#0-and-units-)
+8. [CSS Validation](css-validation-)
 
 ###ID and class name delimiters :
 
@@ -269,3 +270,8 @@ Very small font library if using the font API
 Using the Webfont Loader requires the use of JavaScript to work
 Most browsers will load the rest of the page first, leaving a blank space where the text would be, or otherwise show the fallback option if one exists, until the page fully loads.
 Some fonts in the webfont library render poorly on Windows
+
+###CSS Validation
+Use below url to validate you CSS.
+http://csslint.net/
+http://jigsaw.w3.org/css-validator/#validate_by_uri+with_options
