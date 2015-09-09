@@ -14,7 +14,7 @@
 10. [Comments](#comments-)
 11. [General formatting](#general-formatting-)
 12. [HTML quotation marks](#html-quotation-marks-)
-13. [HTML Validation](#html-validation)
+13. [HTML Validation](#html-validation-)
 
 ###DOCTYPE
 Ideally, the HTML5 DOCTYPE should be used. It's supported in all modern browsers, and throws IE6 and IE7 into standards mode. 
