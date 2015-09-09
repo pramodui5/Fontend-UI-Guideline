@@ -277,5 +277,6 @@ Make sure your CSS is proper and there is no deprecated properties.
 Use below url to validate you CSS.
 
 [CSS Lint](http://csslint.net/)
+
 [W3 CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_uri+with_options)
 
