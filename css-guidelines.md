@@ -8,7 +8,7 @@
 4. [Case sensitive CSS](#case-sensitive-css-)
 5. [Ending your CSS declarations with ";"](#ending-your-css-declarations-with-)
 6. [Shorthand properties](#shorthand-properties-)
-7. [0 and units](#CSS-Guidelines.md#0-and-units-)
+7. [0 and units](#0-and-units-)
 8. [CSS Validation](#css-validation-)
 
 ###ID and class name delimiters :
@@ -274,7 +274,7 @@ Some fonts in the webfont library render poorly on Windows
 ###CSS Validation
 Make sure your CSS is proper and there is no deprecated properties.
 Use below url to validate you CSS.
-```html
+
 [CSS Lint](http://csslint.net/)
 [W3 CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_uri+with_options)
-```html
+
