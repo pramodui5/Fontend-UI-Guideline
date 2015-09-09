@@ -14,6 +14,7 @@
 10. [Comments](#comments-)
 11. [General formatting](#general-formatting-)
 12. [HTML quotation marks](#html-quotation-marks-)
+13. [HTML Validation](#html-validation)
 
 ###DOCTYPE
 Ideally, the HTML5 DOCTYPE should be used. It's supported in all modern browsers, and throws IE6 and IE7 into standards mode. 
@@ -176,4 +177,21 @@ When quoting attribute values, use double ("") rather than single quotation mark
 <a class='maia-button maia-button-secondary'>Sign in</a>
 <!-- Recommended -->
 <a class="maia-button maia-button-secondary">Sign in</a>
+```
+
+###HTML Validation :
+Use valid HTML where possible.
+Use valid HTML code unless that is not possible due to otherwise unattainable performance goals regarding file size.
+Use tools such as the [html W3C HTML validator](http://validator.w3.org/nu/) to test.
+
+```html
+<!-- Not recommended -->
+<title>Test</title>
+<article>This is only a test.
+
+<!-- Recommended -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test</title>
+<article>This is only a test.</article>
 ```
