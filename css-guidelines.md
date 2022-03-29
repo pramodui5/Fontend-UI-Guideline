@@ -1,4 +1,4 @@
-#CSS Guidelines
+# CSS Guidelines
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@
 7. [0 and units](#0-and-units-)
 8. [CSS Validation](#css-validation-)
 
-###ID and class name delimiters :
+### ID and class name delimiters :
 
 Use meaningful or generic ID and class names.
 Instead of presentational or cryptic names, always use ID and class names that reflect the purpose of the element in question, or that are otherwise generic.
@@ -26,7 +26,7 @@ eg:
 .editInfo {}
 ```
 
-###ID and class name style :
+### ID and class name style :
 Use ID and class names that are as short as possible but as long as necessary.
 Try to convey what an ID or class is about while being as brief as possible.
 Using ID and class names this way contributes to acceptable levels of understandability and code efficiency.
@@ -40,7 +40,7 @@ Using ID and class names this way contributes to acceptable levels of understand
 .author {}
 ```
 
-###Type selectors :
+### Type selectors :
 Avoid qualifying ID and class names with type selectors.
 Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
 
@@ -54,12 +54,12 @@ div.error {}
 ```
 
 
-###Case sensitive CSS :
+### Case sensitive CSS :
 CSS is Case-Sensitive, therefore it matters whether you name your classes with camel-case (i.e. `.mainContent { .... } `) 
 and if you’d try to call that class with witout camel-case (i.e. `class=”maincontent”`) it will not recognize it.
 
 
-###Ending your CSS declarations with ";" 
+### Ending your CSS declarations with ";" 
 In order to differentiate a declaration from another, you end each with a semi-colon ; However, you can choose not to use it for your last CSS declaration, 
 since no other declaration will need to be recognized. 
 
@@ -69,7 +69,7 @@ then Its recommend to use the semi-colon at all times, because it often happens 
 which will obviously end up giving you errors and at times, hard to even spot the reason why.
 
 
-###Shorthand properties :
+### Shorthand properties :
 Use shorthand properties where possible.
 CSS offers a variety of shorthand properties (like font) that should be used whenever possible, even in cases where only one value is explicitly set.
 Using shorthand properties is useful for code efficiency and understandability.
@@ -94,7 +94,7 @@ Using shorthand properties is useful for code efficiency and understandability.
 }
 ```
 
-###0 and units :
+### 0 and units :
 Omit unit specification after “0” values.
 Do not use units after 0 values unless they are required.
 
@@ -105,7 +105,7 @@ padding: 0;
 }
 ```
 
-###Pixels vs. Ems
+### Pixels vs. Ems
 
 We use the px unit of measurement to define font size, because it offers absolute control over text.
 We realize that using the em unit for font sizing used to be popular, to accommodate for Internet
@@ -131,18 +131,18 @@ line-height: 1.25em;
 }
 ```
 
-###General Text and Font Styling
+### General Text and Font Styling
 
-####Headings
+#### Headings
 * Define default styling for `h1-h6` headings including headings as links. It's helpful to declare these at the top of your CSS document, and modify them with as necessary for consistency across the site.
 * Headings should show a hierarchy indicating different levels of importance from the top down starting with h1 having the largest font size.
 * SEO: To get a rough idea of how your page hierarchy is organized and read, use your Developer Toolbar to disable CSS. You'll end up with a text-based view of all your `h1-h6` tags, `strong`, `em`, etc.
 
-####Links
+#### Links
 * Default styles for links should be declared and different from the main text styling, and with differing styles for hover state.
 * When styling links with underlines use `border-bottom` and some padding with `text-decoration: none;`. This just looks better.
 
-###@font-face
+### @font-face
 
 The [@font-face at-rule] (http://www.w3.org/TR/2011/WD-css3-fonts-20110324/#font-face-rule) allows you to define custom fonts. It was first defined in the CSS2 specification, but was removed from CSS2.1. Currently, it's a draft recommendation for CSS3.
 
@@ -157,7 +157,7 @@ The font formats included in the specification are:
 * __eot__: Embedded OpenType
 * __svg__, svgz: SVG Font
 
-####Bulletproof @font-face
+#### Bulletproof @font-face
 For full cross-browser compatibility use Fontsprings' new [bulletproof @font-face syntax] (http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax) (latest version as of 2/21/11).
 
 ```css
@@ -171,18 +171,18 @@ For full cross-browser compatibility use Fontsprings' new [bulletproof @font-fac
 }
 ```
 
-####Cross-Browser Compatibility
+#### Cross-Browser Compatibility
 
 Safari, IE 6-9, IE 9 Compatibility Modes, Firefox, Chrome, iOS, Android, Opera
 
-####Prevent Compatibility Mode
+#### Prevent Compatibility Mode
 Sometimes IE can have a mind of its own and will switch to compatibility mode without you knowing. Include the following in the site <head> to prevent your site from defaulting to compatibility mode:
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 
-####Tips for @font-face
+#### Tips for @font-face
 * IE 6–8 will only accept a TrueType font packaged as an EOT.
 * font-weight and font-style have different meanings within @font-face. Declarations where font-weight:bold; means this is the bold version of this typeface, rather than apply bold to this text
 * [@font-face gotchas] (http://www.paulirish.com/2010/font-face-gotchas/)
@@ -199,11 +199,11 @@ __Cons__
 * Limited browser support if used improperly
 * Some older versions of modern browsers (Chrome, Opera) don't always render well. Text can have rough edges. **I have not been able to confirm whether this is still an issue now or not.
 
-###Google WebFonts API & Font Loader
+### Google WebFonts API & Font Loader
 
 There are two options available with Google Webfonts. Both options have their downsides of course but they can be just as good to use as @font-face, it all depends on a projects needs.
 
-####Webfonts API◊
+#### Webfonts API◊
 Google's Webfonts API essentially does the same thing as @font-face, it just does all the hard work for you, providing wider browser support.The major drawback to this method is the very small font library it uses. To make it work all you need to do is include the stylesheet + the font name.
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+Name">
@@ -271,7 +271,7 @@ Using the Webfont Loader requires the use of JavaScript to work
 Most browsers will load the rest of the page first, leaving a blank space where the text would be, or otherwise show the fallback option if one exists, until the page fully loads.
 Some fonts in the webfont library render poorly on Windows
 
-###CSS Validation :
+### CSS Validation :
 
 Make sure your CSS is proper and there is no deprecated properties.
 Use below url to validate you CSS.
